@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="survey design.css">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+  </head>
+  <body>
+  <div class="container">
+  <h1 id="title">Albion Extrusions Survey</h1>
+  <p id="description">Thanks for using Albion Extrusions! Please Fill out this short survey to rate your experience:</p>
+  <fieldset class="fieldset">
+  <form id="survey-form" onsubmit="alert('Thank you for your feedback!')" >
+  <label for="name" id="name-label">Name:<input id="name" type="text" class="center-block" name="name" placeholder="Name" required></input></label>
+    <label for="email" id="email-label">Email: <input class="center-block" name="email" id="email" type="email" required placeholder="Email"></input></label>
+<label for="number" id="number-label">Age:optional <input class="center-block" name="age" id="number" type="number" placeholder="Age" min=18 max=120></input></label>
+<label for="dropdown">Where did you hear about us? <select id="dropdown" name="dropdown" required>
+  <option  value=0>Choose here:</option>
+  <option value="Advertisment">Advertisment </option>
+  <option value="Through a friend">Through a friend.
+  </option>
+  <option value="Social media">Social Media</option>
+  <option value="In person">In person</option>
+  </select></label>
+
+  <label for="button">How would you rate our services? <label for="button1" >Excellent<input class="radio-input" type="radio" value="Excellent" name="button1" ></input></label>
+  <label for="button2" >Good<input class="radio-input"  type="radio" name="button1" value="Good"></input></label>
+  <label for="button3" >Poor<input class="radio-input" type="radio" name="button1" value="Poor"></input></label>
+  </label>
+ 
+<label for="checkbox">Please choose any that apply to you: 
+  <input class="checkbox-input" type="checkbox" id="checkbox" name="checkbox1" value="Quick service">Quick service </input>
+  <input class="checkbox-input" type="checkbox" id="checkbox" name="checkbox2" value="product as described">Product as described </input>
+  <input class="checkbox-input" type="checkbox" id="checkbox" name="checkbox3" value="good price">Good price </input>
+  <input class="checkbox-input" type="checkbox" id="checkbox" name="checkbox4" value="Staff were helpful and polite">Staff were helpful and polite </input></label>
+<label for="textarea">If other, please explain below:</label>
+<textarea name="textarea" rows=10 cols=20 placeholder="Write here..."></textarea>
+ <input id="submit" type="submit" name="submit" required ></input> 
+    </form>
+    </fieldset>
+    </div>
+    </body>
+  </html>
+
+
+
+
